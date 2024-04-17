@@ -1,0 +1,1796 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Templarios Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "AdmBrookhaven"})
+ 
+local Tab = Window:MakeTab({
+    Name = "Scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+local Tab2 = Window:MakeTab({
+    Name = "Tools",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+local Tab3 = Window:MakeTab({
+    Name = "Kill",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab4 = Window:MakeTab({
+    Name = "Trolar",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab5 = Window:MakeTab({
+    Name = "Avatar",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab6 = Window:MakeTab({
+    Name = "Rejoin",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+local Tab7 = Window:MakeTab({
+    Name = "Segredos",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab8 = Window:MakeTab({
+    Name = "Carro",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+  local Tab9 = Window:MakeTab({
+    Name = "Casa",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+  local Tab10 = Window:MakeTab({
+    Name = "Animations",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+  local Tab11 = Window:MakeTab({
+    Name = "Locais De Batalha",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab12 = Window:MakeTab({
+    Name = "Locais Públicos",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab13 = Window:MakeTab({
+    Name = "Nomes",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+ local Tab14 = Window:MakeTab({
+    Name = "Créditos 📄",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab:AddButton({
+    Name = "Executar Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+ 
+ Tab:AddButton({
+    Name = "Executar Nameless (Risco de ban)",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-FE-11243"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Ice Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar RedzHub",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Brookhaven-RP-RedZHub-9326"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Clone Speed",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Vfly",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-VFly-script-8160"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Fly V3",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-v3-7412"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Shift Lock",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Permanent-Shiftlock-7513"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Emote",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544"))()
+    end
+})
+ 
+Tab:AddButton({
+    Name = "Executar Chat Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
+    end
+})
+ 
+ Tab:AddButton({
+    Name = "Executar Ghost Hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    end
+})
+ 
+ Tab:AddButton({
+    Name = "Executar Brookhaven R4D",
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+    end
+})
+
+Tab:AddButton({
+    Name = "Executar Keyboard",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Mobile-keyboard-6975"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "TpTool",
+    Callback = function()
+        mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Equip to Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Punch Fling",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Punch-Tool-7383"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Pegar Sofa",
+    Callback = function()
+        local args = {
+    [1] = "PickingTools",
+    [2] = "Couch"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Too1l"):InvokeServer(unpack(args))
+ 
+    end
+})
+ 
+ Tab2:AddButton({
+    Name = "Telekinesis",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
+    end
+})
+ 
+ Tab2:AddButton({
+    Name = "Remover Todos Os Items",
+    Callback = function()
+        local args = {
+    [1] = "ClearAllTools"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+
+    end
+})
+ 
+Tab3:AddButton({
+    Name = "Op Kill Templarios Hub",
+    Callback = function()
+        local lp = game:FindService("Players").LocalPlayer
+
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+
+local function notif(str,dur)
+	game:FindService("StarterGui"):SetCore("SendNotification", {
+		Title = "Templarios Hub",
+		Text = str,
+		Icon = "rbxassetid://4483345998",
+		Duration = dur or 3
+	})
+end
+
+--// sds
+
+local h = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+
+h.Name = "h"
+h.Parent = game:GetService("CoreGui")
+h.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = h
+Main.Active = true
+Main.Draggable = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
+Main.Size = UDim2.new(0, 454, 0, 218)
+Main.Image = "rbxassetid://0"
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 454, 0, 44)
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.295454562, 0)
+Title.Size = UDim2.new(0, 454, 0, 30)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Op Kill Templarios Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0704845786, 0, 0.270642221, 0)
+TextBox.Size = UDim2.new(0, 388, 0, 62)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Coloque o Nome do Jogador"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.10352423, 0, 0.596330225, 0)
+TextButton.Size = UDim2.new(0, 359, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Matar Jogador"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:Connect(function()
+	local Target = gplr(TextBox.Text)
+	if Target[1] then
+		Target = Target[1]
+		
+		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+		Thrust.Force = Vector3.new(99999,99999,99999)
+		Thrust.Name = "TemplariosForce"
+		repeat
+			lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			Thrust.Location = Target.Character.HumanoidRootPart.Position
+			game:FindService("RunService").Heartbeat:wait()
+		until not Target.Character:FindFirstChild("Head")
+	else
+		notif("Jogador Invalido!")
+	end
+end)
+
+--//fsddfsdf
+notif("Carregado com Susseso!", 5)
+    end
+})
+ 
+Tab3:AddButton({
+    Name = "Fling All",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+    end
+})
+
+Tab3:AddButton({
+    Name = "Fling na Pessoa que Descer do Sofa",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+    end
+})
+
+Tab4:AddButton({
+    Name = "Ficar Super Pequeno",
+    Callback = function()
+        local args = {
+    [1] = "CharacterSizeDown",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab4:AddButton({
+    Name = "Voltar para o tamanho normal",
+    Callback = function()
+        local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args)) 
+        local Section = Tab5:AddSection({
+	Name = "Partes do Corpo"
+})
+
+Tab5:AddButton({
+    Name = "FE Headless (By RedzHub)",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "by:REDz"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+}) Tab5:AddButton({
+    Name = "FE Korblox Perna Direita (By RedzHub)",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 139607718,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "by:REDz"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "FE Korblox Perna Esquerda (By RedzHub)",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 139607673,
+        [6] = 1
+    },
+    [3] = "by:REDz"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Tronco de Gato",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14535311721,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1,
+    },
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Tronco SteamPunk",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 4908013767,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1,
+    },
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Tronco Korblox Morte",
+    Callback = function()
+               local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 16580491126,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1,
+    },
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+    end
+})
+ 
+Tab5:AddButton({
+    Name = "Equipar Inseto Vara",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14731377941,
+        [2] = 14731377894,
+        [3] = 14731377875,
+        [4] = 14731384498,
+        [5] = 14731377938,
+        [6] = 0
+    },
+    [3] = "Stick Bug"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Tronco do Inseto Vara",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14731377941,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1,
+    },
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Tronco de Capivara",
+    Callback = function()
+        local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14676208107,
+        [2] = 14676207979,
+        [3] = 14676208094,
+        [4] = 14676208093,
+        [5] = 14676208120,
+        [6] = 0
+    },
+    [3] = "Capybara"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Acessórios de Mão"
+})
+
+Tab5:AddButton({
+    Name = "Equipar Arma",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3013849063"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Cajado",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3131092953"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Espada",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3343204006"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Machado",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3240543366"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Abóboras"
+})
+
+Tab5:AddButton({
+    Name = "Equipar Abóbora",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 311450131
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Abóbora Roxa",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 132809431
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Abóbora Branca",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 183468963
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Items com Som"
+})
+
+Tab5:AddButton({
+    Name = "Equipar Som de Galinha",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 24112667
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Som de Refrigerante",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 24114402
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Som de Bruxa",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 305888394
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Som de Gaita",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 33070696
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Items com Efeito"
+})
+
+Tab5:AddButton({
+    Name = "Equipar Chifres Com Efeito",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "233705354"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Espada de Costas Flamejante",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "4739738574"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Moicano Flamejante",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "191101707"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Katana Flamejante",
+    Callback = function()
+        local args = {
+    [1] = "wear",
+    [2] = 4790788200
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Roupas dos Templarios"
+})
+
+Tab5:AddButton({
+    Name = "Ficar Com a Roupa Dos Templarios",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "15388922202"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Roupa Templarios Danger",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "15539248108"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Farda Do Miguel",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "15834608802"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Redefinir Avatar"
+})
+
+Tab5:AddButton({
+    Name = "Redefinir Avatar",
+    Callback = function()
+        local args = {
+    [1] = "OCA"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Items The Hunt 2024"
+})
+
+Tab5:AddButton({
+    Name = "Equipar Colar The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733390604"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Colar Dourado The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733476086"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Cajado The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733417644"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Cajado Dourado The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733485893"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Assas The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733434702"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Assas Douradas The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733494880"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Coroa The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733456159"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+Tab5:AddButton({
+    Name = "Equipar Coroa Dourada The Hunt",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16733528436"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+    end
+})
+
+local Section = Tab6:AddSection({
+	Name = "Rejoin"
+})
+
+Tab6:AddButton({
+    Name = "Rejoin",
+    Callback = function()
+        -- Função para rejoin
+function rejoin()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+end
+
+-- Chame a função para reentrar no jogo
+rejoin()
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Teleportar Para o Portal",
+    Callback = function()
+        -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 695 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 5 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -294 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Ir Para o 2 Andar Do Hospital",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -333 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 16 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 61 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Ir Para Passagem Secreta do Hospital",
+    Callback = function()
+               -- Script        -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -349 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 3 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 97 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Ir Para o Lugar Secreto Da Delegacia",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -114 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 19 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 36 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para Base Da Argency",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 178 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 3 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -422 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Ir Para o Buncker",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -117 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = -27 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 234 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab7:AddButton({
+    Name = "Ir Para Debaixo da Montanha",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -346 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 2 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -631 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para Plataforma do Void",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 16 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = -29 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -60 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para o Lugar Secreto da Prefeitura",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -353 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 44 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -139 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para o Avião",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 464 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = -76 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 120 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para Dentro do Apartamento 6",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -2 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 19 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -158 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para Dentro do Apartamento 7",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -2 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 34 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -164 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab7:AddButton({
+    Name = "Ir Para Cima do Motel",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 248 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 26 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 200 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab8:AddButton({
+    Name = "Tocar Musica do GigaChed (Requer Music Pass)",
+    Callback = function()
+        local args = {
+    [1] = "PickingCarMusicText",
+    [2] = "15689448519"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Player1sCa1r"):FireServer(unpack(args))
+
+    end
+})
+ 
+ Tab9:AddButton({
+    Name = "Tocar Musica do GigaChed (Requer Music Pass)",
+    Callback = function()
+        local args = {
+    [1] = "PickHouseMusicText",
+    [2] = "15689448519"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Player1sHous1e"):FireServer(unpack(args))
+
+    end
+})
+ 
+ local Section = Tab10:AddSection({
+	Name = "Bold Animations"
+})
+ 
+ Tab10:AddButton({
+    Name = "Bold Animation Inativo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744209868"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Caminhando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744219182"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Correndo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744214662"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Pulo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744212581"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Nadando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744217055"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Caindo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744207822"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Bold Animation Escalando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "16744204409"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab10:AddSection({
+	Name = "Ud'zal Animations"
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Inativo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3307605825"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Caminhando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3307608414"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Correndo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "3236849826"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Pulo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510236649"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Nadando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510240941"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Caindo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510233257"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Ud'zal Animation Escalando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510230574"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab10:AddSection({
+	Name = "R15 Animations"
+})
+
+Tab10:AddButton({
+    Name = "R15 Animation",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "4211409027"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab10:AddSection({
+	Name = "Mr Toilet Animations"
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Inativo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "4418326547"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Caminhando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510242378"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Correndo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "4418324223"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Pulo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510236649"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Nadando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510240941"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Caindo",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510233257"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+Tab10:AddButton({
+    Name = "Mr Toilet Animation Escalando",
+    Callback = function()
+        local args = {
+    [1] = "AskIfIdAvailable",
+    [2] = "2510230574"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab10:AddSection({
+	Name = "R6 Animations"
+})
+
+Tab10:AddButton({
+    Name = "R6 Animation",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-from-R15-to-R6-9639"))()
+    end
+})
+
+Tab11:AddButton({
+    Name = "Ir Para o Campo",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -475 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 3 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 366 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab11:AddButton({
+    Name = "Ir Para o Avião",
+    Callback = function()
+               -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 464 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = -76 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 120 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Lobby",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -26 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -15 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Mercado",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -9 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -137 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para Delegacia",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -119 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 25 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Hospital",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -305 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 30 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para Prefeitura",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -354 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 8 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -119 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para os Bombeiros",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -453 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -125 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Posto de Gasolina",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 141 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -297 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para a Mecanica",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 0 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -339 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Shopping",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 164 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = -158 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Restaurante",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 162 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 8 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 51 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para o Aeroporto",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = 316 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 5 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 31 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+ 
+ Tab12:AddButton({
+    Name = "Ir Para a Escola",
+    Callback = function()
+            -- Script de teleporte para coordenadas específicas no Roblox
+
+local jogador = game.Players.LocalPlayer -- Obtém o jogador local
+local coordenadaX = -326 -- Substitua pelo valor da coordenada X desejada
+local coordenadaY = 4 -- Substitua pelo valor da coordenada Y desejada
+local coordenadaZ = 211 -- Substitua pelo valor da coordenada Z desejada
+
+-- Teleporta o jogador para as coordenadas especificadas
+jogador.Character:SetPrimaryPartCFrame(CFrame.new(coordenadaX, coordenadaY, coordenadaZ))
+
+    end
+})
+
+Tab13:AddButton({
+    Name = " Ficar com Nome (Templarios Hub)",
+    Callback = function()
+        local args = {
+    [1] = "RolePlayName",
+    [2] = "🅃🄴🄼🄿🄻🄰🅁🄸🄾🅂 🄷🅄🄱"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+
+    end
+})
+
+Tab13:AddButton({
+    Name = "Ficar com Nome (Anti Mandrake)",
+    Callback = function()
+        local args = {
+    [1] = "RolePlayName",
+    [2] = "🄰🄽🅃🄸 🄼🄰🄽🄳🅁🄰🄺🄴"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+
+    end
+})
+
+local Section = Tab14:AddSection({
+	Name = "Créditos:"
+})
+
+local Section = Tab14:AddSection({
+	Name = "AdmBrookhaven4"
+})
+
+local Section = Tab14:AddSection({
+	Name = "sr_greg81"
+})
+
+local Section = Tab14:AddSection({
+	Name = "LP_play167"
+})
